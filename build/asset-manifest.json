@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fendprep-react/static/css/main.279d9bcb.chunk.css",
+    "main.js": "/fendprep-react/static/js/main.d028c649.chunk.js",
+    "main.js.map": "/fendprep-react/static/js/main.d028c649.chunk.js.map",
+    "runtime~main.js": "/fendprep-react/static/js/runtime~main.852328e2.js",
+    "runtime~main.js.map": "/fendprep-react/static/js/runtime~main.852328e2.js.map",
+    "static/js/2.7b62ede7.chunk.js": "/fendprep-react/static/js/2.7b62ede7.chunk.js",
+    "static/js/2.7b62ede7.chunk.js.map": "/fendprep-react/static/js/2.7b62ede7.chunk.js.map",
+    "index.html": "/fendprep-react/index.html",
+    "precache-manifest.5f634034e94837ab89701dd11bf64827.js": "/fendprep-react/precache-manifest.5f634034e94837ab89701dd11bf64827.js",
+    "service-worker.js": "/fendprep-react/service-worker.js",
+    "static/css/main.279d9bcb.chunk.css.map": "/fendprep-react/static/css/main.279d9bcb.chunk.css.map"
+  }
+}
