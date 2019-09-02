@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/fendprep-react/precache-manifest.5f634034e94837ab89701dd11bf64827.js"
+  "/fendprep-react/precache-manifest.53f55642f42b7c810c6941d878997fe5.js"
 );
 
 self.addEventListener('message', (event) => {
