@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/style.css';
+import "../styles/style.css";
 
 class Form extends React.Component {
   constructor(props) {
@@ -76,34 +76,31 @@ class Form extends React.Component {
 
     this.validateInputs();
 
-    if (this.state.email && this.state.userName && this.state.password >= 8) {
-      const api_url =
-        "https://private-7e7394-udacityfrontendtest.apiary-mock.com/signup";
-      if (this.state.userName && this.state.password) {
-        fetch(api_url, {
-          method: "POST",
-          body: JSON.stringify({
-            username: this.state.userName,
-            password: this.state.password
-          }),
-          headers: {
-            "Content-Type": "application/json"
-          }
-        })
-          .then(res => res.json())
-          .then(jsonData => this.setState(() => ({ resolved: jsonData })))
-          .catch(err => new Error("Something wrong happend" + err));
-        this.setState(() => ({ errors: [] }));
-      }
+    if (this.state.email && this.state.userName && this.state.password.length >= 8) {
+      const api_url ="https://private-7e7394-udacityfrontendtest.apiary-mock.com/signup";
+      fetch(api_url, {
+        method: "POST",
+        body: JSON.stringify({
+          username: this.state.userName,
+          password: this.state.password
+        }),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      })
+        .then(res => res.json())
+        .then(jsonData => this.setState(() => ({ resolved: jsonData })))
+        .catch(err => new Error("Something wrong happend" + err));
+      this.setState(() => ({ errors: [] }));
     }
   };
 
   render() {
     return (
       <section className="container">
-      <section className="row">
-      <h2 className="signup-title mt-1 ml-2">Create an Account</h2>
-      </section>
+        <section className="row">
+          <h2 className="signup-title mt-1 ml-2">Create an Account</h2>
+        </section>
 
         {this.state.errors.length > 0 && (
           <section className="mt-4 mb-4 row alert alert-danger">
@@ -195,7 +192,9 @@ class Form extends React.Component {
           />
         </form>
         <section className="row">
-        <p className="note text-muted mt-2 col-12">Fields that are marked with * are mandatory.</p>
+          <p className="note text-muted mt-2 col-12">
+            Fields that are marked with * are mandatory.
+          </p>
         </section>
         {this.state.errors.length === 0 && this.state.resolved.message && (
           <section className="mt-4 row alert alert-danger">

@@ -12,6 +12,9 @@
 
 - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+## Live Link:
+- The app is deployed to ghpages at this URL: https://commandermadi.github.io/fendprep-react/
+
 ## The Vanilla JS version
 - https://github.com/commanderMadi/fendprep
 
