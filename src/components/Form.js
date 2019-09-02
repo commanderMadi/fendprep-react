@@ -193,7 +193,7 @@ class Form extends React.Component {
         </form>
         <section className="row">
           <p className="note text-muted mt-2 col-12">
-            Fields that are marked with * are mandatory.
+            Fields that are marked with * are mandatory fields.
           </p>
         </section>
         {this.state.errors.length === 0 && this.state.resolved.message && (
